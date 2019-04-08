@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Display References</title>
+</head>
+<body>
+
+References in database:<br/>
+<ul>
+{% for reference in references %}
+    <li>Img Name: {{ reference.img_name }} | Desc: {{ reference.img_desc }} | Date added: {{ reference.date }}</li>
+{% endfor %}
+</ul>
+
+Analyse in database:<br/>
+<ul>
+{% for analyse in analyses %}
+    <li>{{ analyse }}</li>
+{% endfor %}
+</ul>
+
+
+</body>
+</html>
